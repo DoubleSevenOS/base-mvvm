@@ -1,0 +1,3 @@
+include ':BaseAdapter'
+include ':app', ':Base','StateLoadLayout'
+rootProject.name = "base-mvvm"

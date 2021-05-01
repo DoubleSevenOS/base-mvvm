@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="base_cancel_string">取消</string>
+    <string name="base_sure_string">确定</string>
+    <string name="base_save_string">保存</string>
+    <string name="base_empty_title_string">我是一个空的界面</string>
+</resources>

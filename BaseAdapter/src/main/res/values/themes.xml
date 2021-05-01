@@ -1,0 +1,4 @@
+<resources>
+
+    <style name="Theme.TestBinding" parent="Theme.MaterialComponents.Light" />
+</resources>
