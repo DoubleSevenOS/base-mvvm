@@ -1,26 +1,41 @@
-package com.example.myapplicationt.base;
+package com.example.myapplicationt;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 
-import com.android.base.fragment.BaseDataBindFragment;
-import com.android.base.viewmodel.BaseViewModel;
-
-import androidx.databinding.ViewDataBinding;
+import com.android.base.base.BaseViewProxy;
 
 /**
- * @ClassName: com.example.myapplicationt.base
+ * @ClassName: com.example.myapplicationt
  * @Description:
  * @Author: hyy
  * @Date: 2021/6/16
- * @Time: 4:59 PM
+ * @Time: 6:07 PM
  */
-public abstract class BaseBindingFragment<DB extends ViewDataBinding, VM extends BaseViewModel> extends BaseDataBindFragment<DB, VM> {
+public class CustProxy extends BaseViewProxy {
+    public CustProxy(Context context) {
+        super(context);
+    }
+
+
+    @Override
+    public void initView() {
+
+    }
+
+    @Override
+    public void initData() {
+
+    }
+
     /**
      * 显示loading
      */
     @Override
     public void showLoadingView() {
-
+        //TODO log 调式
+        Log.i("CustProxy", "showLoadingView==啥也不干就是玩=>");
     }
 
     /**
@@ -28,7 +43,8 @@ public abstract class BaseBindingFragment<DB extends ViewDataBinding, VM extends
      */
     @Override
     public void dismissView() {
-
+        //TODO log 调式
+        Log.i("CustProxy", "dismissView==啥也不干就是玩=>");
     }
 
     /**
@@ -54,7 +70,8 @@ public abstract class BaseBindingFragment<DB extends ViewDataBinding, VM extends
      */
     @Override
     public void jumpPage(String path) {
-
+        //TODO log 调式
+        Log.i("CustProxy", "jumpPage==啥也不干就是玩=>");
     }
 
     /**
@@ -65,7 +82,8 @@ public abstract class BaseBindingFragment<DB extends ViewDataBinding, VM extends
      */
     @Override
     public void jumpPage(String path, Bundle bundle) {
-
+        //TODO log 调式
+        Log.i("CustProxy", "jumpPage==啥也不干就是玩=>");
     }
 
     @Override

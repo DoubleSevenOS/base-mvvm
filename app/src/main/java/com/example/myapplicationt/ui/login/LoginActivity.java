@@ -1,14 +1,16 @@
 package com.example.myapplicationt.ui.login;
 
+import com.android.base.activity.BaseDataBindingActivity;
 import com.android.base.base.BaseDataBindingConfig;
 import com.example.myapplicationt.BR;
+import com.example.myapplicationt.CustProxy;
 import com.example.myapplicationt.R;
-import com.example.myapplicationt.base.BaseBindingActivity;
 import com.example.myapplicationt.databinding.ActivityLoginBinding;
+import com.example.myapplicationt.viewmodel.LoginViewModel;
 
 import androidx.annotation.NonNull;
 
-public class LoginActivity extends BaseBindingActivity<ActivityLoginBinding, LoginViewModel> {
+public class LoginActivity extends BaseDataBindingActivity<ActivityLoginBinding, LoginViewModel> {
 
     @NonNull
     @Override
@@ -25,6 +27,7 @@ public class LoginActivity extends BaseBindingActivity<ActivityLoginBinding, Log
 
     @Override
     public void initView() {
+        setBaseViewProxy(new CustProxy(this));
     }
 
 
@@ -32,4 +35,5 @@ public class LoginActivity extends BaseBindingActivity<ActivityLoginBinding, Log
     public void initData() {
 
     }
+
 }

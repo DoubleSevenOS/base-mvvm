@@ -4,7 +4,7 @@ import androidx.annotation.NonNull;
 
 public interface IBaseBindingView<VM> {
     /**
-     * 获取binding 配置
+     * 获取binding相关配置
      *
      * @return
      */

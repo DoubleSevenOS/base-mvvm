@@ -1,13 +1,11 @@
-package com.example.myapplicationt.ui.login;
+package com.example.myapplicationt.bean;
 
 import androidx.annotation.Nullable;
 
 /**
  * Authentication result : success (user details) or error message.
  */
-class LoginResult {
-    @Nullable
-    private LoggedInUserView success;
+public class LoginResult {
     @Nullable
     private Integer status;
 
@@ -21,12 +19,12 @@ class LoginResult {
         this.token = token;
     }
 
-    LoginResult(@Nullable Integer error) {
+    public LoginResult(@Nullable Integer error) {
         this.status = error;
     }
 
     @Nullable
-    Integer getError() {
+    public Integer getError() {
         return status;
     }
 }

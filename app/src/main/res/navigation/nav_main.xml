@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_main"
-    app:startDestination="@id/home_frag">
+    android:id="@+id/nav_main">
 
-    <fragment
-        android:id="@+id/home_frag"
-        android:name="com.example.myapplicationt.fragment.ItemFragment"></fragment>
+    <!--    <fragment-->
+    <!--        android:id="@+id/home_frag"-->
+    <!--        android:name="com.example.myapplicationt.fragment.ItemFragment"></fragment>-->
 
-    <fragment
-        android:id="@+id/act_frag"
-        android:name="com.example.myapplicationt.fragment.ActFragment"></fragment>
+    <!--    <fragment-->
+    <!--        android:id="@+id/act_frag"-->
+    <!--        android:name="com.example.myapplicationt.fragment.ActFragment"></fragment>-->
 
-    <fragment
-        android:id="@+id/mine_frag"
-        android:name="com.example.myapplicationt.fragment.SettingsFragment"></fragment>
+    <!--    <fragment-->
+    <!--        android:id="@+id/mine_frag"-->
+    <!--        android:name="com.example.myapplicationt.fragment.SettingsFragment"></fragment>-->
 
 </navigation>

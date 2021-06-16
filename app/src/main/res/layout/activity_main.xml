@@ -20,18 +20,22 @@
         android:orientation="vertical"
         tools:context=".MainActivity">
 
-        <fragment
-            android:id="@+id/frag_nav"
-            android:name="androidx.navigation.fragment.NavHostFragment"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            app:navGraph="@navigation/nav_main" />
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/nav_bottom"
+        <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:menu="@menu/menu_main" />
+            android:onClick='@{()->vm.checkListener()}'></Button>
+        <!--        <fragment-->
+        <!--            android:id="@+id/frag_nav"-->
+        <!--            android:name="androidx.navigation.fragment.NavHostFragment"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="0dp"-->
+        <!--            android:layout_weight="1"-->
+        <!--            app:navGraph="@navigation/nav_main" />-->
+
+        <!--        <com.google.android.material.bottomnavigation.BottomNavigationView-->
+        <!--            android:id="@+id/nav_bottom"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            app:menu="@menu/menu_main" />-->
     </LinearLayout>
 </layout>

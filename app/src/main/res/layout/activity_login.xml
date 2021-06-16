@@ -7,7 +7,7 @@
 
         <variable
             name="vm"
-            type="com.example.myapplicationt.ui.login.LoginViewModel" />
+            type="com.example.myapplicationt.viewmodel.LoginViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

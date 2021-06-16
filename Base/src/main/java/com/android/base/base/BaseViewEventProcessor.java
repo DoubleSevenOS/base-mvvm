@@ -10,6 +10,7 @@ import androidx.lifecycle.Observer;
 
 import com.android.base.common.Constants;
 import com.android.base.viewmodel.BaseViewModel;
+
 public class BaseViewEventProcessor<T extends LifecycleOwner> {
     public BaseViewEventProcessor(@NonNull T t, @NonNull BaseViewModel baseViewModel, @NonNull IBaseView iBaseView) {
         registEvent(t, baseViewModel, iBaseView);
@@ -41,7 +42,6 @@ public class BaseViewEventProcessor<T extends LifecycleOwner> {
             viewModel.getBaseViewEventLiveData().getDismissViewEvent().observe(t, new Observer<Boolean>() {
                 @Override
                 public void onChanged(Boolean aBoolean) {
-                    Log.i("LiveData", "DismissViewEvent: onChanged" + aBoolean);
                     if (aBoolean) {
                         iBaseView.dismissView();
                     }
