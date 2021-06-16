@@ -4,6 +4,7 @@ import android.app.Application;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.MutableLiveData;
+import io.reactivex.functions.Consumer;
 
 import com.example.baseadapter.bean.MultiItemBean;
 import com.example.myapplicationt.repo.MainModel;
@@ -11,7 +12,6 @@ import com.android.base.viewmodel.BaseViewModel;
 
 import java.util.List;
 
-import io.reactivex.functions.Consumer;
 
 /**
  * 创建者 ：  huyangyang962

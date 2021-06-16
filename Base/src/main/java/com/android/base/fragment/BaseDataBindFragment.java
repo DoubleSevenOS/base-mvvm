@@ -20,14 +20,6 @@ import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
-
-/**
- * @ClassName: com.android.base.ui
- * @Description:
- * @Author: yyw
- * @Date: 2021/1/5
- * @Time: 14:43
- */
 public abstract class BaseDataBindFragment<DB extends ViewDataBinding, VM extends BaseViewModel> extends Fragment implements IBaseView, IBaseBindingView<VM> {
     public DB mBinding;
     public VM mViewModel;

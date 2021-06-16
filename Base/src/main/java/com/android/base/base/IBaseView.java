@@ -4,13 +4,6 @@ import android.os.Bundle;
 
 import java.util.Map;
 
-/**
- * @ClassName: com.android.base.ui
- * @Description: 基类，基础功能
- * @Author: yyw
- * @Date: 2021/1/4
- * @Time: 16:46
- */
 public interface IBaseView {
 
     void initView();
@@ -52,4 +45,6 @@ public interface IBaseView {
      * @param bundle
      */
     void jumpPage(String path, Bundle bundle);
+
+    void finishActivity();
 }

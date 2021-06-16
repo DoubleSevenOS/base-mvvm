@@ -10,14 +10,6 @@ import androidx.lifecycle.Observer;
 
 import com.android.base.common.Constants;
 import com.android.base.viewmodel.BaseViewModel;
-
-/**
- * @ClassName: com.android.base.ui
- * @Description: bindingview基类，公共事件处理类
- * @Author: yyw
- * @Date: 2021/1/5
- * @Time: 15:50
- */
 public class BaseViewEventProcessor<T extends LifecycleOwner> {
     public BaseViewEventProcessor(@NonNull T t, @NonNull BaseViewModel baseViewModel, @NonNull IBaseView iBaseView) {
         registEvent(t, baseViewModel, iBaseView);

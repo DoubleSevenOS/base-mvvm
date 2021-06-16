@@ -4,11 +4,6 @@ import androidx.lifecycle.Lifecycle;
 import androidx.lifecycle.LifecycleObserver;
 import androidx.lifecycle.OnLifecycleEvent;
 
-/**
- * 创建者 ：  huyangyang962
- * 创建日期： 2021/3/22 10:23 AM
- * 描述：
- */
 public interface LifecycleObseverImp extends LifecycleObserver {
 
     @OnLifecycleEvent(Lifecycle.Event.ON_CREATE)

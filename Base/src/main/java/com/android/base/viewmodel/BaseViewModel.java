@@ -5,15 +5,12 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 
-import androidx.annotation.NonNull;
-import androidx.databinding.ObservableField;
-import androidx.lifecycle.AndroidViewModel;
-import androidx.lifecycle.ViewModel;
-
 import com.android.base.LifecycleObseverImp;
 import com.android.base.base.BaseViewEventLiveData;
 import com.android.base.common.Constants;
 
+import androidx.annotation.NonNull;
+import androidx.lifecycle.AndroidViewModel;
 import io.reactivex.Observable;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.CompositeDisposable;
@@ -21,13 +18,6 @@ import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 
-/**
- * @ClassName: com.android.base.viewmodel
- * @Description:
- * @Author: yyw
- * @Date: 2021/1/4
- * @Time: 17:20
- */
 public class BaseViewModel extends AndroidViewModel implements LifecycleObseverImp {
 
     private BaseViewEventLiveData mUiStatusChangeLiveData;

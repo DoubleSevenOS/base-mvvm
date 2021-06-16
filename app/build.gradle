@@ -33,7 +33,7 @@ android {
 }
 
 dependencies {
-//    implementation project(':Base')
+    implementation project(':Base')
     implementation project(':BaseAdapter')
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
@@ -47,6 +47,5 @@ dependencies {
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.5'
     implementation 'androidx.navigation:navigation-fragment:2.3.2'
     implementation 'androidx.navigation:navigation-ui:2.2.2'
-    implementation 'com.github.lvbaby:PayUtils:1.0.1'
-    implementation 'com.gitee.seven-os:base-mvvm:1.0.0.1'
+//    implementation 'com.github.DoubleSevenOS:base-mvvm:1.0.0.1'
 }

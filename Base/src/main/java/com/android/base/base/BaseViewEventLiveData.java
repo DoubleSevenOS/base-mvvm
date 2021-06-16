@@ -5,11 +5,6 @@ import android.text.method.SingleLineTransformationMethod;
 
 import androidx.lifecycle.MutableLiveData;
 
-/**
- * 创建者 ：  huyangyang962
- * 创建日期： 2021/3/22 10:36 AM
- * 描述：
- */
 public class BaseViewEventLiveData {
     private MutableLiveData<Boolean> mIsShowLoadingEvent;
     private MutableLiveData<Boolean> mIsEmptyViewEvent;
