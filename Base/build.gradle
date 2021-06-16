@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
-group='com.gitee.seven-os'
+group='com.github.DoubleSevenOS'
 
 android {
     compileSdkVersion 30
