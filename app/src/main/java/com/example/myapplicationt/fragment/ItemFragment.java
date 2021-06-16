@@ -6,6 +6,7 @@ import androidx.lifecycle.Observer;
 import com.example.baseadapter.bean.MultiItemBean;
 import com.example.myapplicationt.BR;
 import com.example.myapplicationt.R;
+import com.example.myapplicationt.base.BaseBindingFragment;
 import com.example.myapplicationt.databinding.FragmentItemListBinding;
 import com.example.myapplicationt.viewmodel.ItemViewModel;
 import com.android.base.base.BaseDataBindingConfig;
@@ -17,7 +18,7 @@ import java.util.List;
 /**
  * A fragment representing a list of Items.
  */
-public class ItemFragment extends BaseDataBindFragment<FragmentItemListBinding, ItemViewModel> {
+public class ItemFragment extends BaseBindingFragment<FragmentItemListBinding, ItemViewModel> {
 
     private MyItemRecyclerViewAdapter myItemRecyclerViewAdapter;
 

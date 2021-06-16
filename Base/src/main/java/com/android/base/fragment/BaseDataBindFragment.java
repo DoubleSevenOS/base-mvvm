@@ -11,7 +11,6 @@ import com.android.base.base.BaseDataBindingConfig;
 import com.android.base.base.BaseViewEventProcessor;
 import com.android.base.base.IBaseBindingView;
 import com.android.base.base.IBaseView;
-import com.android.base.view.LoadingView;
 import com.android.base.viewmodel.BaseViewModel;
 
 import androidx.annotation.NonNull;
@@ -23,7 +22,6 @@ import androidx.lifecycle.ViewModelProvider;
 public abstract class BaseDataBindFragment<DB extends ViewDataBinding, VM extends BaseViewModel> extends Fragment implements IBaseView, IBaseBindingView<VM> {
     public DB mBinding;
     public VM mViewModel;
-    private LoadingView mLoadingView;
 
     @Nullable
     @Override
@@ -68,57 +66,6 @@ public abstract class BaseDataBindFragment<DB extends ViewDataBinding, VM extend
         return new ViewModelProvider(this).get(modelClass);
     }
 
-    /**
-     * 显示loading
-     */
-    @Override
-    public void showLoadingView() {
-    }
-
-    /**
-     * 显示空界面
-     */
-    @Override
-    public void showEmptyView() {
-        Log.i("LoadService", "showEmptyView: ");
-    }
-
-    /**
-     * 取消状态界面
-     */
-    @Override
-    public void dismissView() {
-        Log.i("LoadService", "dismissView: ");
-    }
-
-    /**
-     * 显示重新刷新界面
-     */
-    @Override
-    public void showReloadView() {
-
-    }
-
-    /**
-     * 跳转界面
-     *
-     * @param path
-     */
-    @Override
-    public void jumpPage(String path) {
-        Log.i("PagePage", "=====跳转界面====" + path);
-    }
-
-    /**
-     * 跳转界面
-     *
-     * @param path
-     * @param bundle
-     */
-    @Override
-    public void jumpPage(String path, Bundle bundle) {
-        Log.i("PagePage", "=====跳转界面====" + path + "，exrParams" + bundle.toString());
-    }
 
 
     /**

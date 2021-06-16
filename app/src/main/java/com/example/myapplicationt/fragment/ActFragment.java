@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.myapplicationt.BR;
 import com.example.myapplicationt.R;
 import com.example.myapplicationt.adapter.TestAdatapter;
+import com.example.myapplicationt.base.BaseBindingFragment;
 import com.example.myapplicationt.databinding.FragmentActBinding;
 import com.example.myapplicationt.viewmodel.ActViewModel;
 import com.android.base.base.BaseDataBindingConfig;
@@ -19,7 +20,7 @@ import java.util.List;
  * A simple {@link Fragment} subclass.
  * create an instance of this fragment.
  */
-public class ActFragment extends BaseDataBindFragment<FragmentActBinding, ActViewModel> {
+public class ActFragment extends BaseBindingFragment<FragmentActBinding, ActViewModel> {
 
     private TestAdatapter testAdatapter;
     private List<String> itemDatas;
